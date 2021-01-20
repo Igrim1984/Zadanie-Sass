@@ -4,14 +4,14 @@
 	border: 0;
 	font-size: $primary_fontsize;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 
-@mixin trasformation {
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+@mixin trasformation ($x,$y){
+    -webkit-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    transform: translate($x, $y);
 }
 
 @mixin buttons {
