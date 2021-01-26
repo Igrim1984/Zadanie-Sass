@@ -126,23 +126,19 @@ figure:hover:before {
 }
 
 figure:hover .caption-head:before {
-    left: -20px;
-    top: -20px;
+    @include figure-position (-20px,auto,auto,-20px) 
 }
 
 figure:hover .caption-head:after {
-    right: -20px;
-    top: -20px;
+    @include figure-position (-20px, -20px, auto, auto)
 }
 
 figure:hover .caption-blurb:before {
-    left: -20px;
-    bottom: -20px;
+    @include figure-position (auto, auto, -20px, -20px)
 }
 
 figure:hover .caption-blurb:after {
-    right: -20px;
-    bottom: -20px;
+    @include figure-position(auto, -20px, -20px, auto)
 }
 
 figure img {
